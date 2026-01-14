@@ -1,1 +1,240 @@
-안녕하세용
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASH-BORN | Credits</title>
+    <style>
+      :root {
+        --bg-color: #0f0f0f;
+        --card-bg: #1a1a1a;
+        --accent-color: #ff4d4d; /* 재(Ash)와 어울리는 붉은 포인트 */
+        --text-main: #e0e0e0;
+        --text-dim: #a0a0a0;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 800px;
+        width: 90%;
+        padding: 50px 0;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      h1 {
+        font-size: 3rem;
+        letter-spacing: 5px;
+        color: var(--accent-color);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      .divider {
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--accent-color),
+          transparent
+        );
+        margin: 20px auto;
+        width: 60%;
+      }
+
+      section {
+        background: var(--card-bg);
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        border: 1px solid #333;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        border-left: 4px solid var(--accent-color);
+        padding-left: 15px;
+        margin-bottom: 25px;
+        color: var(--text-main);
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .info-item h4 {
+        color: var(--text-dim);
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+
+      .info-item p {
+        font-size: 1.1rem;
+        margin: 0;
+      }
+
+      .license-box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: #252525;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+
+      .cc-icons img {
+        height: 40px;
+        filter: grayscale(1) invert(1);
+      }
+
+      a {
+        color: var(--accent-color);
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      a:hover {
+        color: white;
+        text-shadow: 0 0 10px var(--accent-color);
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px;
+        color: var(--text-dim);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>ASH-BORN</h1>
+        <div class="divider"></div>
+        <p>Project Development Credits</p>
+      </header>
+
+      <section>
+        <h2>Development Team</h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <h4>Lead Developer</h4>
+            <p>김형균</p>
+          </div>
+          <div class="info-item">
+            <h4>Total Members</h4>
+            <p>1 명 (Solo Development)</p>
+          </div>
+          <div class="info-item">
+            <h4>Production Period</h4>
+            <p>2025.12.01 - 2026.01.14</p>
+          </div>
+          <div class="info-item">
+            <h4>Special Thanks</h4>
+            <p>박지연, 이동춘, 홍승우, 정옥채</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Assets & Licenses</h2>
+        <p>이 프로젝트는 아래의 오픈 소스 및 라이선스 규정을 준수합니다.</p>
+
+        <div class="license-box">
+          <div style="font-size: 2rem">🛡️</div>
+          <div>
+            <strong>Game-icons.net</strong>
+            <p
+              style="font-size: 0.9rem; margin-top: 5px; color: var(--text-dim)"
+            >
+              Icons made by various authors. Available on
+              <a href="https://game-icons.net" target="_blank">game-icons.net</a
+              >. <br />
+              Licensed under
+              <a
+                href="https://creativecommons.org/licenses/by/3.0/"
+                target="_blank"
+                >CC BY 3.0</a
+              >.
+            </p>
+          </div>
+        </div>
+
+        <div class="license-box" style="margin-top: 15px">
+          <div class="cc-icons">
+            <img
+              src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg"
+              alt="CC BY"
+            />
+          </div>
+          <div>
+            <strong>Creative Commons Attribution 3.0</strong>
+            <p
+              style="font-size: 0.9rem; margin-top: 5px; color: var(--text-dim)"
+            >
+              Additional assets are used under the
+              <a
+                href="https://creativecommons.org/licenses/by/3.0/"
+                target="_blank"
+                >CC BY 3.0</a
+              >.
+            </p>
+          </div>
+        </div>
+
+        <div class="license-box" style="margin-top: 15px">
+          <div style="font-size: 2rem">🎮</div>
+          <div>
+            <strong>Kenney Assets</strong>
+            <p
+              style="font-size: 0.9rem; margin-top: 5px; color: var(--text-dim)"
+            >
+              High-quality game assets provided by
+              <a href="https://kenney.nl/" target="_blank">Kenney.nl</a>. <br />
+              Licensed under
+              <a
+                href="https://creativecommons.org/publicdomain/zero/1.0/"
+                target="_blank"
+                >CC0 1.0 Universal</a
+              >
+              (Public Domain).
+            </p>
+          </div>
+        </div>
+
+        <div class="license-box" style="margin-top: 15px">
+          <div style="font-size: 2rem">🎨</div>
+          <div>
+            <strong>Pixabay Content License</strong>
+            <p
+              style="font-size: 0.9rem; margin-top: 5px; color: var(--text-dim)"
+            >
+              Royalty-free images & Music provided by
+              <a href="https://pixabay.com/" target="_blank">Pixabay</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer>&copy; 2026 Lookies09. All Rights Reserved.</footer>
+    </div>
+  </body>
+</html>
